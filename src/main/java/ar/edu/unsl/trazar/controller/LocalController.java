@@ -13,8 +13,8 @@ import ar.edu.unsl.trazar.service.LocalService;
 
 @RestController
 @RequestMapping("/local")
-public class LocalController {
-	
+public class LocalController
+{	
 	@Resource
 	LocalService localService;
 	
@@ -27,5 +27,4 @@ public class LocalController {
 	public Local getLocalById(@PathVariable("localId") Integer localId) {
 		return localService.getLocalById(localId);
 	}
-
 }
